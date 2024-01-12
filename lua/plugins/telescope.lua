@@ -4,7 +4,7 @@ return {
     lazy = true,
     keys = {
             {"<leader>pf", function()
-                require('telescope.builtin').find_files()
+                require('telescope.builtin').git_files() -- git_files() for both keymaps, as I only use that
             end},
             {"<leader>pg", function()
                 require('telescope.builtin').git_files()
